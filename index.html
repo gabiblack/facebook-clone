@@ -9,62 +9,61 @@
     
 </head>
 <body>
-    <div>
-        <header>DFA Learn HTML/CSS</header>
-    </div>
-    <div>
-        <form action="" method="post">
-            <input type="email" name="username" id="email-login" placeholder="Enter email ..." >
-            <input type="password" name="password" id="password-login" placeholder="Enter password..." >
-            <input type="button" value="Login">
-        </form>
-    </div>
-    <h2>Facebook helps you to connect and share with the people in your life.</h2>
-    <img src="./img/peopleNetwork.png" alt="people network map">
-    <h1>Create an account</h1>
-    <h3>It's free and always will be</h3>
-    <form action="" method="post">
-        <div>
-            <input type="text" name="firstName" id="first-name" placeholder="First Name">
-            <input type="text" name="lastName" id="last-name" placeholder="Last Name">
+    <div class="Banner">
+        <div class="Header" id="Title">
+           <header>DFA Learn HTML/CSS</header>
         </div>
-        <div>
-            <input type="tel" name="phoneNumber" id="phone-number" placeholder="Phone Number">
-            
-        </div>
-        <input type="password" name="newPassword" id="new-password" placeholder="New Password">
-        <div>
-
-        </div>
-        
-        <div>
-            <h3>Birthday</h3>
-        <select name="dayDropdown" id="day-dropdown">
-        </select>
-        <select name="monthDropdown" id="month-dropdown">
-        </select>
-        <select name="yearDropdown" id="year-dropdown">
-        </select>
-        </div>
-
-        <div>
-            <form action="" method="post">
-                
-                <input type="radio" name="gender" id="Female">
-                <label for="Female">Female</label>
-                
-                <input type="radio" name="gender" id="Male">
-                <label for="Male">Male</label>
+        <div class="Header" id="login">
+            <form class="login" action="" method="post">
+                <input type="email" name="username" id="email-login" placeholder="Enter email ..." >
+                <input type="password" name="password" id="password-login" placeholder="Enter password..." >
+                <input type="button" value="Login" id="loginButton">
             </form>
         </div>
-        
-        <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie
-            Policv. You mav receive SMS notifications from us and can opt out ai
-            an time
-        </p>
-        <input type="button" value="Sign Up">
+    </div>
+    <div class="main">
+        <div class="runner green" id="info">
+            <h2 id="Welcome">Facebook helps you to connect and share with the people in your life.</h2>
+            <img src="./img/peopleNetwork.png" alt="people network map">
+        </div>
+        <div class="runner red" id="signUp">
+            <h1>Create an account</h1>
+            <h4>It's free and always will be</h4>
+            <form action="" method="post">
+                <input type="text" name="firstName" id="first-name" placeholder="First Name" required>
+                <input type="text" name="lastName" id="last-name" placeholder="Last Name" required>
+                <input type="text" name="phoneNumber" id="phone-number" placeholder="Mobile number or Email" required>
+                <input type="password" name="newPassword" id="new-password" placeholder="New Password" required>
 
-    </form>
+                <h3 id="birthday">Birthday</h3>
+                <div class="dropbox" id="DB">
+                    <select name="dayDropdown" id="day-dropdown" required>
+                    </select>
+                    <select name="monthDropdown" id="month-dropdown" required>
+                    </select>
+                    <select name="yearDropdown" id="year-dropdown" required>
+                    </select>
+                </div>
+        
+                <form action="" method="post" id="gender">
+                    <input type="radio" name="gender" id="Female">
+                    <label for="Female">Female</label>
+                    
+                    <input type="radio" name="gender" id="Male" required>
+                    <label for="Male">Male</label>
+                </form>
+                
+                <p id="disclaimer">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie
+                    Policv. You mav receive SMS notifications from us and can opt out at
+                    an time
+                </p>
+                <input type="submit" value="Sign Up" id="submit">
+        
+            </form>
+
+        </div>
+
+    </div>
     <script src="JSCode.js"></script>
 </body>
 
