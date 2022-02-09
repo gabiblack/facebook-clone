@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li:last-child {
+    background-color: blueviolet;
+    color: rgba(12, 255, 255, 1);
+}
+
+li:first-child {
+    color: coral;
+}
+
+li:nth-child(2) {
+    background-color:darkred;
+}
+
+p:first-of-type:hover {
+    background-color:rgba(12, 255, 255, 1);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(127, 127, 127, 1);
+    
+}
+
+table {
+    margin: 10px;
+}
+
+table, td, th {
+    border: 2px solid red;
+    border-spacing: 0;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td, th {
+    padding: 5px;
+}
+
+label[for="milk"] {
+    background-color: aquamarine;
+}
+
+label[for^="s"] {
+    background-color: brown;
+}
+
+label[for$="m"] {
+    background-color: dodgerblue;
+}
+
+label[for*="wee"] {
+    background-color:burlywood;
+}
+
+[type="email"] {
+    color:aqua;
+}
+
+a[href$=".pdf"] {
+    color: rebeccapurple;
+}
+
