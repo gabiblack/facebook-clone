@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible 2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav class="Banner">
+        <section class="Header" id="title">
+            <header>DFA Learn HTML/CSS</header>
+        </section>
+        <section class="Header" id="login">
+            <form class="Login" action="" method="post">
+                <input type="email" name="username" id="email-login" placeholder="Enter email ..."  required>
+                <input type="password" name="password" id="password-login" placeholder="Enter password..." required>
+                <input type="submit" value="Login" id="loginButton">
+            </form>
+        </section>
+    </nav>
+    <div class="Main">
+        <section class="Runner Info" id="info">
+            <h2 id="welcome">Facebook helps you to connect and share with the people in your life.</h2>
+            <img src="./img/peopleNetwork.png" alt="people network map">
+        </section>
+
+        <section class="Runner SignUp" id="signUp">
+            <h1 id="text1">Create an account</h1>
+            <h4 id="text4">It's free and always will be</h4>
+            <form class="SignUp" action="" method="post">
+                <input class="Short" type="text" name="firstName" id="first-name" placeholder="First Name" required>
+                <input class="Short" type="text" name="lastName" id="last-name" placeholder="Last Name" required>
+                <input class="Long" type="text" name="phoneNumber" id="phone-number" placeholder="Mobile number or Email" required>
+                <input class="Long" type="password" name="newPassword" id="new-password" placeholder="New Password" required>
+                <h3 id="birthday">Birthday</h3>
+                <form class="Birthday" action="" method="post">
+                    <select name="dayDropdown" id="day-dropdown" required></select>
+                    <select name="monthDropdown" id="month-dropdown" required></select>
+                    <select name="yearDropdown" id="year-dropdown" required></select>
+                </form>
+
+                <form action="" method="post" id="gender">
+                    <input type="radio" name="gender" id="Female">
+                    <label for="Female">Female</label>
+                    
+                    <input type="radio" name="gender" id="Male" required>
+                    <label for="Male">Male</label>
+                </form>
+                
+                <p id="disclaimer">
+                    By clicking Sign Up, you agree to our Terms, Data Policy and Cookie
+                    Policy. You mav receive SMS notifications from us and can opt out at
+                    an time
+                </p>
+
+                <input type="submit" value="Sign Up" id="submit">
+            </form>
+        </section>
+    </div>
+    <script src="JSCode.js"></script>
+</body>
+</html>
